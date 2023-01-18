@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  background-color: rgb(156, 209, 255);
+}
+
+.header-box1 {
+  margin: 10px 100px;
+}
+
+.header-box2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  margin-right: 50px;
+}
+
+.profile-name {
+  padding: 10px 0;
+}

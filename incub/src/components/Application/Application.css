@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(249, 248, 248);
+}
+
+.applic-from {
+    margin: 40px auto;
+    width: 50%;
+}
+
+.a {
+    padding: 25px;
+    background-color: antiquewhite;
+}
+
+label {
+    margin: 5px;
+    margin-bottom: 0;
+}
+
+input {
+    margin: 5px;
+    margin-top: 5px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+textarea {
+    margin: 5px;
+    height: 100px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.app-header {
+    background-color: rgb(104, 208, 243);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.header-btn {
+    display: flex;
+}
+
+.outer {
+    width: 100%;
+    display: flex;
+}
+
+.outer-first {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.outer-second {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.radio {
+    margin: 0;
+}
+
+.sub-button {
+    padding: 10px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(122, 182, 210);
+    color: white;
+    font-size: large;
+}
+
+@media only screen and (max-width: 752px) {
+    .outer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .outer-first {
+        width: 100%;
+    }
+}
