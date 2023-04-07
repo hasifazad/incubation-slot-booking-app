@@ -29,7 +29,6 @@ function LoginForm() {
             email, password
         }
         Axios.post('http://localhost:4000/admin/login', obj).then((response) => {
-            console.log(response.data)
 
             if (response.data.login) {
                 setAdmin(response.data.admin)

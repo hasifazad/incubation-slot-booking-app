@@ -49,11 +49,11 @@ export default function ScrollDialog(props) {
             tabIndex={-1}
           >
             <Typography>Name</Typography>
-            <OutlinedInput defaultValue={props.data.name} readOnly sx={{ marginBottom: '20px' }} />
+            <OutlinedInput fullWidth size='small' defaultValue={props.data.name} readOnly sx={{ marginBottom: '20px' }} />
             <Typography>Email</Typography>
-            <OutlinedInput defaultValue={props.data.email} readOnly sx={{ marginBottom: '20px' }} />
+            <OutlinedInput fullWidth size='small' defaultValue={props.data.email} readOnly sx={{ marginBottom: '20px' }} />
             <Typography>Company Name</Typography>
-            <OutlinedInput defaultValue={props.data.company} readOnly sx={{ marginBottom: '20px' }} />
+            <OutlinedInput fullWidth size='small' defaultValue={props.data.company} readOnly sx={{ marginBottom: '20px' }} />
             <Typography>Description</Typography>
             <Typography>{props.data.descrip_1}</Typography>
           </DialogContentText>

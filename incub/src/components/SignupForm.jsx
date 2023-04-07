@@ -20,7 +20,6 @@ function SignupForm() {
     const onsubmit = (data) => {
         console.log(data);
         Axios.post('http://localhost:4000/admin/signup', data).then((response) => {
-            console.log(response);
             navigate('/login')
         }).catch((error) => {
             console.log(error);

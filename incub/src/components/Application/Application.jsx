@@ -11,18 +11,20 @@ function Application() {
     const span = { color: 'red', fontSize: '13px', margin: '0 5px 5px 5px' }
     const { register, handleSubmit, formState: { errors } } = useForm();
 
-    const onSubmit = (data) => {
+    const onSubmit = (data, e) => {
         console.log(data)
+
         Axios.post('http://localhost:4000/form-submit', data).then((res) => {
-            navigate('/application')
+            e.target.reset()
         }).catch(() => {
 
         })
 
+
     }
 
     return (
-        <div>
+        <>
             <div className='app-header'>
                 <div>
                     <Typography>LOGO</Typography>
@@ -93,7 +95,7 @@ function Application() {
                     <button className='sub-button' type=''>Submit</button>
                 </div>
             </form>
-        </div>
+        </>
     )
 }
 

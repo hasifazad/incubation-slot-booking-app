@@ -35,3 +35,7 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.slot-box {
+    width: 1000px;
+}

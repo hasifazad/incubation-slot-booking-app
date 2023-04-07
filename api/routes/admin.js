@@ -83,6 +83,24 @@ router.get('/application-list', (req, res) => {
     })
 })
 
+router.get('/application-list/approved', (req, res) => {
+    client.query('SELECT * FROM applications WHERE approval_status=true').then((response) => {
+        res.status(200).json(response.rows)
+    }).catch((err) => {
+        console.log(err);
+        res.status(401).json('data not found')
+    })
+})
+
+router.get('/application-list/unapproved', (req, res) => {
+    client.query('SELECT * FROM applications WHERE approval_status IS NULL').then((response) => {
+        res.status(200).json(response.rows)
+    }).catch((err) => {
+        console.log(err);
+        res.status(401).json('data not found')
+    })
+})
+
 
 router.get('/company', (req, res) => {
     client.query('SELECT company,approval_status FROM applications')
