@@ -3,6 +3,8 @@ import React, { useEffect, useContext } from 'react'
 import Axios from "axios";
 import { AdminDetailsContext } from "../contexts/AdminContext";
 import LoginForm from "../components/LoginForm";
+import Header from "../components/Header/Header";
+import AdminPanel from "../components/AdminPanel/AdminPanel";
 
 
 
@@ -28,7 +30,15 @@ function PrivateRoutes() {
 
 
   return (
-    admin ? <Outlet /> : <LoginForm />
+    admin ?
+      <>
+        <Header />
+        <div className='app-body'>
+          <AdminPanel />
+          <Outlet />
+        </div >
+      </>
+      : <LoginForm />
   )
 
 

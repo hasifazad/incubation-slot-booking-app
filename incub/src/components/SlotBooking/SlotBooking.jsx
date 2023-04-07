@@ -84,6 +84,7 @@ function SlotBooking() {
                         <Box component="form" sx={{ display: 'flex', flexWrap: 'wrap' }}>
                             <FormControl sx={{ m: 1, minWidth: 120 }} fullWidth>
                                 <Select
+                                    value={selection}
                                     onChange={handleChange}
                                     size='small'
                                 >
